@@ -1,0 +1,60 @@
+.addComment-container{
+    position:fixed;
+    height: 100vh;
+    background-color: rgb(73, 71, 71, 0.8);
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    
+}
+
+.addComment{
+    display:flex;
+    flex-direction: column;
+   
+    
+    height: fit-content;
+    width: 50%;
+    margin: 20% auto;
+    text-align: center;
+}
+.addComment h2{
+    color:var(--primary-color);;
+}
+.addComment form{
+    display: flex;
+    flex-direction: column;
+}
+.addComment form textarea{
+    margin:0.5rem auto;
+    padding:0.5rem;
+    height:5rem;
+    border-radius: 2rem;
+    border: none;
+    width: 60%;
+}
+.addComment form input{
+    margin:0.5rem auto;
+    padding:0.5rem;
+    
+    border-radius: 2rem;
+    border: none;
+    width: 60%;
+}
+
+.addComment button{
+        margin:0.5rem auto;
+        width:60%;
+        background-color: var(--primary-color);
+        height: 2rem;
+        border:none;
+        border-radius: 2rem;
+        color: var(--black-color);
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    
+}
+

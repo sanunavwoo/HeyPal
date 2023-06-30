@@ -1,0 +1,102 @@
+.login-container{
+    height: 34rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3.5rem 0rem 0rem;
+    background-color: rgb(250, 250, 250);
+}
+.login-left{
+   background-color: rgb(245, 186, 23);
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: end;
+
+    
+}
+.login-left-details{
+    width: 10%;
+    
+    text-align: right;
+    display: flex;
+    align-self: center;
+    background-color: #f5ba17;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+}
+.login-right{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 186, 23,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.login-div{
+    
+    display: flex;
+    flex-direction: row;
+    grid-gap: 5rem;
+    align-items: center;
+    width: 60%;
+    height: 32rem;
+    box-shadow: 2px 2px 2px #777373;
+    background-color: rgb(250, 250, 250);
+}
+.login-div-left{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5ba17;
+    background-image: url(https://www.transparenttextures.com/patterns/checkered-light-emboss.png);
+}
+@media (max-width: 768px){
+    .login-div-left{
+        display: none;
+    }
+}
+.login-div-left div{
+    margin-top: 8rem;
+}
+.login-div-right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.login-div h1{
+    color:rgb(65, 62, 62);
+}
+.login-div input{
+    width: 10rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid 1px rgb(82, 80, 80);
+    border: none;
+}
+.login-div button{
+    width: 13rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid 1px rgb(248, 204, 81);
+    background-color: rgb(248, 204, 81);
+    color:rgb(32, 32, 31);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.password-wrapper{
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    width: 13rem;
+    margin: 0.5rem;
+}

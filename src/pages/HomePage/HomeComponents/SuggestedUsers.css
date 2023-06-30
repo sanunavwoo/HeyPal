@@ -1,0 +1,39 @@
+
+.user-card{
+    display:flex;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-bottom: 0.5px solid rgb(201, 197, 197);
+}
+.avatar-img-span{
+    display: flex;
+    align-items: center;
+}
+.avatar-img-span img{
+    height: 40px;
+    width:40px;
+    border-radius: 2rem;
+}
+.user-card-details{
+    width: 100%;
+    text-align: left;
+}
+.user-card-details p{
+    margin: 0;
+    padding: 0.1rem 0.5rem;
+}
+.user-card-followBtn-div{
+    display: flex;
+    align-items: center;
+    /* margin: 0rem 0rem 0rem 2rem */
+}
+.user-card-followBtn-div button{
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+}
+.user-card-followBtn-div button:hover{
+    box-shadow: 0 3px 8px rgb(107, 96, 96);
+}

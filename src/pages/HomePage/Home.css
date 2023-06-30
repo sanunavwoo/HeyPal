@@ -1,0 +1,119 @@
+.homepage-conatiner{
+    display: flex;
+    
+    padding-top: 4rem;
+    background-color: var(--white-color);
+    height: 100%;
+}
+
+.center-div{
+    position: relative;
+    height: 100%;
+    
+    left: 20%;
+    /* background-color: blue; */
+    width: 60%;
+}
+
+.search-results-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    /* box-shadow: 0 2px 6px rgb(107, 96, 96); */
+    border-radius: 0.5rem;
+    position: absolute;
+    
+}
+.searchbar-div{
+    padding:0.5rem;
+    margin: 0.5rem auto;
+}
+@media (max-width: 768px){
+    .searchbar-div{
+        margin: 3.5rem auto 1rem;
+        width: 100%;
+    }
+    .searchbar-div input{
+        width:100%;
+    }
+}
+.searchbar-div input{
+    padding: 0.4rem;
+    border:none;
+    border-radius: 1rem;
+    color:var(--black-color);
+    border: none;
+    width: 26rem;
+    height: 1.5rem;
+    font-weight: 500;
+    font-size: 0.8rem;;
+}
+.search-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0.5rem;
+}
+.searcheduser-card{
+    display:flex;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    box-shadow: 0 3px 8px rgb(107, 96, 96);
+    width: 50%;
+    background-color: var(--white-color);
+}
+.avatar-img-span{
+    display: flex;
+    align-items: center;
+}
+.avatar-img-span img{
+    height: 40px;
+    width:40px;
+    border-radius: 2rem;
+}
+.searcheduser-card-details{
+    width: 100%;
+    text-align: left;
+}
+.searcheduser-card-details p{
+    margin: 0;
+    padding: 0.1rem 0.5rem;
+}
+
+.create-post-btn{
+    border:none;
+    border-radius: 5rem;
+    height:3rem;
+    width: 3rem;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.filter-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    align-self: center;
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+.filter-btn-container button{
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: system-ui;
+    width: 29%;
+}
+
+.filter-btn-container button:hover{
+    box-shadow: 0 3px 8px rgb(107, 96, 96);
+}

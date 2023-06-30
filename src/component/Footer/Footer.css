@@ -1,0 +1,22 @@
+.footer-div{
+    position: fixed;
+    z-index: 5;
+    bottom: 0px;
+    display: none;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--white-color);
+    align-items: center;
+}
+.footer-div button{
+    height:1.5rem;
+    width: 1.5rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px){
+    .footer-div{
+        display:flex;
+        
+    }
+}

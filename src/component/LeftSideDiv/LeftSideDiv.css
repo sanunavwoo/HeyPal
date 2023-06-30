@@ -1,0 +1,27 @@
+.left-div{
+    height: 100vh;
+    background-color: var(--white-color);
+    width: 20%;
+    position: fixed;
+    left: 0;
+    border-right: 0.2px solid var(--black-color);
+}
+@media (max-width: 768px){
+    .left-div{
+        display: none;
+    }
+}
+.left-div-navlink{
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width:100%;
+}
+
+.left-div-navlink span{
+    padding: 0.5rem;
+}
+.left-div-navlink a{
+    text-decoration: none;
+    
+}
