@@ -1,4 +1,5 @@
 import { useContext, useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 import { LeftSideDiv } from "../../component/LeftSideDiv/LeftSideDiv";
 import { Navigation } from "../../component/NavBar/Navigation";
 import { RightSideDiv } from "../../component/RightSideDiv/RightSideDiv";
@@ -8,10 +9,12 @@ import { PostsContext } from "../../contexts/PostsContext";
 import { UserContext } from "../../contexts/UserContext";
 import BookmarkKitty from "../../Assets/BookmarkKitty.webp";
 import "./Explore.css";
+import { Footer } from "../../component/Footer/Footer";
+import { AddPost } from "../../component/AddPostBox/AddPost";
 
 export function Bookmarks(){
 
-    const {bookmarkedPostsID,allPosts,getAllPosts,getBookmarkHandler}= useContext(PostsContext);
+    const {bookmarkedPostsID,allPosts,getAllPosts,getBookmarkHandler,isCreatePostFlag,setIsCreatePostFlag}= useContext(PostsContext);
     
 
     
@@ -31,6 +34,10 @@ export function Bookmarks(){
                     <LeftSideDiv />
                     <div className="center-div">
                     
+                    <div>
+                        {isCreatePostFlag && <AddPost setIsCreatePostFlag={setIsCreatePostFlag} /> }
+                    </div>
+
                         {bookmarkedPostsID.length>0 ?
 
                             <>
@@ -56,8 +63,8 @@ export function Bookmarks(){
                         
                     </div>
                     <RightSideDiv />
-                    
+                    <ToastContainer autoClose={700} />  
                 </div>
-            
+                <Footer setIsCreatePostFlag={setIsCreatePostFlag} />
         </>);
 }

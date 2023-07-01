@@ -47,6 +47,7 @@ export function EditProfileForm({setIsEditProfileFlag, profileDetailsToBeUpdated
                          <h2>Edit Profile</h2>   
                          <form onSubmit={handleEditProfile}>
                             
+                            <span className="label-name">
                             <label>First Name</label>
                             <input
                                 type="text"
@@ -59,6 +60,9 @@ export function EditProfileForm({setIsEditProfileFlag, profileDetailsToBeUpdated
                                     [e.target.name]: e.target.value,
                                 }))}
                              />
+                             </span>
+
+                             <span className="label-name">
                               <label>Last Name</label>
                               <input
                                 type="text"
@@ -71,31 +75,38 @@ export function EditProfileForm({setIsEditProfileFlag, profileDetailsToBeUpdated
                                     [e.target.name]: e.target.value,
                                 }))}
                              />
-                              <label>Username</label>
-                            <input
-                                type="text"
-                                placeholder="Enter Username"
-                                name="username"
-                                value= {editProfileFormData.username}
-                                disabled
-                                required
-                                onChange={(e)=>setEditProfileFormData((editProfileFormData)=>({
-                                    ...editProfileFormData,
-                                    [e.target.name]: e.target.value,
-                                }))}
-                             /> 
-                              <label>Password</label>
-                             <input
-                                type="text"
-                                placeholder="Enter Password"
-                                name="password"
-                                value= {editProfileFormData.password}
-                                required
-                                onChange={(e)=>setEditProfileFormData((editProfileFormData)=>({
-                                    ...editProfileFormData,
-                                    [e.target.name]: e.target.value,
-                                }))}
-                             /> 
+                             </span>
+
+                             <span className="label-name">
+                                <label>Username</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter Username"
+                                    name="username"
+                                    value= {editProfileFormData.username}
+                                    disabled
+                                    required
+                                    onChange={(e)=>setEditProfileFormData((editProfileFormData)=>({
+                                        ...editProfileFormData,
+                                        [e.target.name]: e.target.value,
+                                    }))}
+                                /> 
+                             </span>
+                            <span className="label-name">
+                                <label>Password</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter Password"
+                                    name="password"
+                                    value= {editProfileFormData.password}
+                                    required
+                                    onChange={(e)=>setEditProfileFormData((editProfileFormData)=>({
+                                        ...editProfileFormData,
+                                        [e.target.name]: e.target.value,
+                                    }))}
+                                /> 
+                            </span>
+                            <span className="label-name">
                               <label>Bio</label>
                              <input
                                 type="text"
@@ -107,7 +118,8 @@ export function EditProfileForm({setIsEditProfileFlag, profileDetailsToBeUpdated
                                     ...editProfileFormData,
                                     [e.target.name]: e.target.value,
                                 }))}
-                             />  
+                             /> 
+                             </span> 
                              {/* <input
                                 type="text"
                                 placeholder="Enter Avatar URL"
@@ -119,6 +131,7 @@ export function EditProfileForm({setIsEditProfileFlag, profileDetailsToBeUpdated
                                     [e.target.name]: e.target.value,
                                 }))}
                              />  */}
+                             <span className="label-name">
                              <label>Portfolio URL</label>
                                <input
                                 type="text"
@@ -131,6 +144,8 @@ export function EditProfileForm({setIsEditProfileFlag, profileDetailsToBeUpdated
                                     [e.target.name]: e.target.value,
                                 }))}
                              /> 
+                             </span>
+
                               <p>Choose your Avatar</p>
                             <div className="avatar-radio-div">
                                

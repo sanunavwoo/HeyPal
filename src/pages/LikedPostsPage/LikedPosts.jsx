@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 import { LeftSideDiv } from "../../component/LeftSideDiv/LeftSideDiv";
 import { Navigation } from "../../component/NavBar/Navigation";
 import { RightSideDiv } from "../../component/RightSideDiv/RightSideDiv";
@@ -9,12 +10,14 @@ import BookmarkKitty from "../../Assets/BookmarkKitty.webp";
 
 
 import "./Explore.css";
+import { Footer } from "../../component/Footer/Footer";
+import { AddPost } from "../../component/AddPostBox/AddPost";
 
 export function LikedPosts(){
     console.log("In likedpOts page")
 
     const {stateAuth}= useContext(AuthContext);
-    const {allPosts}= useContext(PostsContext);
+    const {allPosts,isCreatePostFlag,setIsCreatePostFlag}= useContext(PostsContext);
 
     const likedPostsArr= [...allPosts].filter((i)=>i.likes.likedBy.find(({_id})=>_id===stateAuth.userDetails[0]._id));
     console.log("Liked Posts::",likedPostsArr);
@@ -28,6 +31,10 @@ export function LikedPosts(){
                 <LeftSideDiv />
                 <div className="center-div">
                 
+                <div>
+                        {isCreatePostFlag && <AddPost setIsCreatePostFlag={setIsCreatePostFlag} /> }
+                </div>
+
                 {likedPostsArr.length>0 ?
                     <>
                         
@@ -51,8 +58,9 @@ export function LikedPosts(){
                     
                 </div>
                 <RightSideDiv />
-                
+                <ToastContainer autoClose={700} />
             </div>
+            <Footer setIsCreatePostFlag={setIsCreatePostFlag} />
         
     </>);
 }

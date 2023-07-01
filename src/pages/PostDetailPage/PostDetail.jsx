@@ -9,13 +9,15 @@ import { PostsContext } from "../../contexts/PostsContext";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Footer } from "../../component/Footer/Footer";
+import { AddPost } from "../../component/AddPostBox/AddPost";
 
 
 export function PostDetail(){
 
     const {postID}= useParams();
   
-    const {allPosts}= useContext(PostsContext);
+    const {allPosts,isCreatePostFlag,setIsCreatePostFlag}= useContext(PostsContext);
 
     const selectedPost= allPosts.find(({_id})=>_id===postID);
 
@@ -29,6 +31,10 @@ export function PostDetail(){
                     
                     <LeftSideDiv />
                     <div className="center-div">
+
+                    <div>
+                        {isCreatePostFlag && <AddPost setIsCreatePostFlag={setIsCreatePostFlag} /> }
+                    </div>
                             <>
 
                             <div>
@@ -42,6 +48,6 @@ export function PostDetail(){
                     <RightSideDiv />
                     <ToastContainer autoClose={700} />
                 </div>
-            
+                <Footer setIsCreatePostFlag={setIsCreatePostFlag} />
         </>);
 }

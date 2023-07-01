@@ -26,12 +26,12 @@
     flex-direction: column;
 }
 .editProfileForm form input{
-    margin:0.5rem auto;
+    margin:0.5rem 0;
     padding:0.5rem;
     height:1rem;
     border-radius: 2rem;
     border: none;
-    width: 40%;
+    width: 60%;
 }
 
 .editProfileForm button{
@@ -73,6 +73,13 @@ input[type=radio]:checked + label>img {
     margin: 0rem 1rem;
 }
 
+.label-name{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    width: 50%;
+}
 label{
 color: var(--white-color); 
 }

@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+
 import { AddPost } from "../../component/AddPostBox/AddPost";
 import { EditProfileForm } from "../../component/EditProfileForm/EditProfileForm";
 import { Footer } from "../../component/Footer/Footer";
@@ -157,7 +159,7 @@ export function Profile(){
   
                     </div>
                     <RightSideDiv />
-                    
+                    <ToastContainer autoClose={700} />
                 </div>
                 <Footer setIsCreatePostFlag={setIsCreatePostFlag} />
         </>

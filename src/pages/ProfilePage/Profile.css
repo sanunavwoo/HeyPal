@@ -10,6 +10,13 @@
     box-shadow: 0 3px 8px rgb(107, 96, 96);
     border-radius: 1rem;
 }
+@media (max-width: 768px){
+    .profile-container{
+        
+        width: 100%;
+    }
+   
+}
 
 .profile-header{
     display: flex;
