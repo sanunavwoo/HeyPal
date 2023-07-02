@@ -40,7 +40,7 @@ export function SinglePostCard({eachPost,showComments}){
 
     const navigate= useNavigate();
 
-
+    console.log("createdAt::",eachPost.createdAt);
     useEffect(()=>{
         setUserData(allUsers?.find(({username})=>username===eachPost.username));
         setCommentsForThisPost(eachPost.comments);

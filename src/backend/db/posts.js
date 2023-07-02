@@ -28,7 +28,7 @@ export const posts = [
       },
     ],
     username: "sanunavo",
-    createdAt: formatDate(),
+    createdAt: "2023-06-02T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -43,7 +43,7 @@ export const posts = [
     },
     comments: [],
     username: "carlsmith",
-    createdAt: formatDate(),
+    createdAt: "2023-07-02T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -68,7 +68,7 @@ export const posts = [
       },
     ],
     username: "janedoe",
-    createdAt: formatDate(),
+    createdAt: "2023-03-04T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -83,7 +83,7 @@ export const posts = [
     },
     comments: [],
     username: "adarshbalika",
-    createdAt: formatDate(),
+    createdAt: "2023-05-11T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -117,7 +117,7 @@ export const posts = [
       },
     ],
     username: "adarshbalika",
-    createdAt:formatDate(),
+    createdAt:"2023-06-12T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -132,7 +132,7 @@ export const posts = [
     },
     comments: [],
     username: "adarshbalika",
-    createdAt: formatDate(),
+    createdAt: "2023-02-22T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -146,7 +146,7 @@ export const posts = [
     },
     comments: [],
     username: "adarshbalika",
-    createdAt: formatDate(),
+    createdAt: "2023-03-16T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -161,7 +161,7 @@ export const posts = [
     },
     comments: [],
     username: "adarshbalika",
-    createdAt: formatDate(),
+    createdAt: "2022-07-02T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -186,13 +186,13 @@ export const posts = [
       },
     ],
     username: "sanunavo",
-    createdAt: formatDate(),
+    createdAt: "2022-09-06T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
     _id: uuid(),
     content:
-      "Check out this amazing video from BakinZone https://bakinzone.netlify.app/videos/qtlhdIfojmc",
+      "Take a Ride in to the Danger Zone! What a movie",
     mediaURL: "",
     likes: {
       likeCount: 1,
@@ -211,7 +211,7 @@ export const posts = [
       },
     ],
     username: "alexmaxwell",
-    createdAt: formatDate(),
+    createdAt: "2023-01-05T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -235,7 +235,7 @@ export const posts = [
       },
     ],
     username: "sophiajones",
-    createdAt: formatDate(),
+    createdAt: "2021-08-12T20:34:13+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -250,7 +250,7 @@ export const posts = [
     },
     comments: [],
     username: "sanunavo",
-    createdAt: formatDate(),
+    createdAt: "2022-11-21T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -266,7 +266,7 @@ export const posts = [
     },
     comments: [],
     username: "johndoe",
-    createdAt: formatDate(),
+    createdAt: "2023-06-15T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -281,7 +281,7 @@ export const posts = [
     },
     comments: [],
     username: "alexmaxwell",
-    createdAt: formatDate(),
+    createdAt: "2022-10-06T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -297,7 +297,7 @@ export const posts = [
     },
     comments: [],
     username: "carlsmith",
-    createdAt: formatDate(),
+    createdAt: "2023-03-12T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -312,7 +312,7 @@ export const posts = [
     },
     comments: [],
     username: "sophiajones",
-    createdAt: formatDate(),
+    createdAt: "2022-08-02T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -327,7 +327,7 @@ export const posts = [
     },
     comments: [],
     username: "sanunavo",
-    createdAt:formatDate(),
+    createdAt:"2022-04-09T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -343,7 +343,7 @@ export const posts = [
     },
     comments: [],
     username: "carlsmith",
-    createdAt: formatDate(),
+    createdAt: "2023-02-17T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -359,7 +359,7 @@ export const posts = [
     },
     comments: [],
     username: "janedoe",
-    createdAt: formatDate(),
+    createdAt: "2022-12-02T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -375,7 +375,7 @@ export const posts = [
     },
     comments: [],
     username: "alexmaxwell",
-    createdAt: formatDate(),
+    createdAt: "2023-12-25T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -391,7 +391,7 @@ export const posts = [
     },
     comments: [],
     username: "sanunavo",
-    createdAt: formatDate(),
+    createdAt: "2021-10-01T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -407,7 +407,7 @@ export const posts = [
     },
     comments: [],
     username: "sophiajones",
-    createdAt: formatDate(),
+    createdAt: "2022-10-23T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 
@@ -422,7 +422,7 @@ export const posts = [
     },
     comments: [],
     username: "janedoe",
-    createdAt: formatDate(),
+    createdAt: "2023-01-01T20:34:13+05:30",
     updatedAt: formatDate(),
   },
 ];
