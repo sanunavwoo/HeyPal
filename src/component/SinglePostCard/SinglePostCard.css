@@ -8,6 +8,7 @@
     padding:1rem;
     grid-gap:1rem;
     box-shadow: 0 3px 8px rgb(107, 96, 96);
+    cursor: pointer;
 }
 @media (max-width: 768px){
     .singlePostCard-container{
@@ -16,6 +17,7 @@
 }
 
 .singlePostCard-header{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -28,6 +30,7 @@
     width: 70%;
     text-align: left;
     margin-left: 1rem;
+    cursor: pointer;
 }
 .singlePostCard-header-left-userDetails h2{
     margin:0;
@@ -47,6 +50,7 @@
     
 }
 .singlePostCard-header-right .contextual-menu{
+    position: absolute;
     display: flex;
     flex-direction: column;
 }
@@ -73,6 +77,10 @@
     
     background: none;
     border: none;
+}
+.action-btns button svg:hover{
+   transform: scale(1.2);
+    /* box-shadow: 0 3px 8px rgb(107, 96, 96); */
 }
 .action-btns .qty{
     position:absolute;

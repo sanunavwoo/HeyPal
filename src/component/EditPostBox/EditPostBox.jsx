@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { PostsContext } from "../../contexts/PostsContext";
 
-import "./AddCommentBox.css";
+import "./EditPostBox.css";
 
 export function EditPostBox({setIsEditPostFlag,postToBeUpdated,setShowContextualMenu}){
 
@@ -56,37 +56,38 @@ export function EditPostBox({setIsEditPostFlag,postToBeUpdated,setShowContextual
                          <form onSubmit={editPostFormHandler}>
                             
                         
+                            <div className="post-content">
+                                <textarea
+                                    placeholder="Edit Post.."
+                                    height="2rem"
+                                    width="100%"
+                                    outline="none"
+                                    border="none"
+                                    resize="none"
+                                    focusBorderColor="transparent"
+                                    name="content"
+                                    value= {editPostFormData.content}
+                                    required
+                                    onChange={(e)=>setEditPostFormData((editPostFormData)=>({
+                                        ...editPostFormData,
+                                        [e.target.name]: e.target.value,
+                                    }))}
+                                />
 
-                            <textarea
-                                placeholder="Edit Post.."
-                                height="8rem"
-                                width="100%"
-                                outline="none"
-                                border="none"
-                                resize="none"
-                                focusBorderColor="transparent"
-                                name="content"
-                                value= {editPostFormData.content}
-                                required
-                                onChange={(e)=>setEditPostFormData((editPostFormData)=>({
-                                    ...editPostFormData,
-                                    [e.target.name]: e.target.value,
-                                }))}
-                            />
+                                {/* <input
+                                    type="text"
+                                    placeholder="Enter Media URL"
+                                    name="mediaURL"
+                                    value= {editPostFormData.mediaURL}
+                                    
+                                    onChange={(e)=>setEditPostFormData((editPostFormData)=>({
+                                        ...editPostFormData,
+                                        [e.target.name]: e.target.value,
+                                    }))}
+                                /> */}
+                                {editPostFormData.mediaURL.length>0 && <img id="post-img" src={editPostFormData.mediaURL} /> }
 
-                            {/* <input
-                                type="text"
-                                placeholder="Enter Media URL"
-                                name="mediaURL"
-                                value= {editPostFormData.mediaURL}
-                                
-                                onChange={(e)=>setEditPostFormData((editPostFormData)=>({
-                                    ...editPostFormData,
-                                    [e.target.name]: e.target.value,
-                                }))}
-                             /> */}
-
-                            <input 
+                                <input 
                                 type="file"
                                 id="imageInput"
                                 name="mediaURL"
@@ -94,11 +95,17 @@ export function EditPostBox({setIsEditPostFlag,postToBeUpdated,setShowContextual
                                 onChange={handleImageChange}
                              /> 
 
-                             <button type="submit">Submit</button>
-                             <button onClick={()=>{
-                                setIsEditPostFlag(false);
-                                setShowContextualMenu(false);
-                                }}>Cancel</button>
+                            </div>
+
+                            <span className="edit-post-btns">
+                                <button className="edit-post-btn" type="submit">Submit</button>
+                                <button className="edit-post-btn" onClick={()=>{
+                                    setIsEditPostFlag(false);
+                                    setShowContextualMenu(false);
+                                    }}>Cancel</button>
+                            </span>
+
+                             
                         </form>
                 </div>   
             </div>

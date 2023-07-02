@@ -1,5 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
@@ -51,7 +53,7 @@ export function SinglePostCard({eachPost,showComments}){
 
     const onShareHandler= (idToBeShared)=>{
         navigator.clipboard.writeText(`https://heyPal.netlify.app/post/${idToBeShared}`);
-        alert("Link copied");
+        toast.success("Link copied");
     }
 
     const goToPostDetailsHandler= (id)=>{

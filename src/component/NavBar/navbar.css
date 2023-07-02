@@ -44,6 +44,9 @@
     color: rgb(222, 247, 245);  
     font-size: 1.15rem;  
 }
+.navbar-list-item a svg:hover{
+    transform: scale(1.2);
+}
 .navbar-list-item a:active{
       
     color: rgb(248, 204, 81); 

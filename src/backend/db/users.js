@@ -72,15 +72,18 @@ export const users = [
 
   {
     _id: "o5gzWjEeX_",
-    firstName: "Tipu",
-    lastName: "Baiya",
-    username: "tipubaiya",
+    // firstName: "Tipu",
+    // lastName: "Baiya",
+    // username: "tipubaiya",
+    firstName: "Sanunavo",
+    lastName: "Dey",
+    username: "sanunavo",
     password: "tipubaiya123",
     bio: "Frontend Engineer",
     bookmarks: [],
     avatarUrl:
       "https://www.shareicon.net/data/512x512/2016/05/24/770117_people_512x512.png",
-    website: "https://www.irctc.co.in/",
+    website: "https://github.com/sanunavwoo",
     createdAt: "2022-01-04T10:55:06+05:30",
     updatedAt: formatDate(),
     // following: [],

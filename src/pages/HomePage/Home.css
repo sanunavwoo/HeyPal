@@ -3,6 +3,7 @@
     flex-direction: column;
     padding-top: 4rem;
     background-color: var(--white-color);
+  
     height: 100%;
 }
 
@@ -47,11 +48,11 @@
     border:none;
     border-radius: 1rem;
     color:var(--black-color);
-    border: none;
+    border: double 0.5px var(--primary-color);
     width: 26rem;
     height: 1.5rem;
     font-weight: 500;
-    font-size: 0.8rem;;
+    font-size: 0.8rem;
 }
 .search-parent{
     display: flex;
@@ -66,6 +67,44 @@
     box-shadow: 0 3px 8px rgb(107, 96, 96);
     width: 50%;
     background-color: var(--white-color);
+    z-index: 2;
+}
+.filter-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border-top: 0.5px solid rgb(201, 197, 197);
+    
+}
+.filter-header button{
+    background: none;
+    border:none;
+}
+
+.filter-menu{
+    display: flex;
+    flex-direction: column;
+}
+.filter-menu span{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 20%;
+}
+.filter-menu button{
+    background-color: var(--primary-color);
+    text-align: left;
+    border:none;
+    padding: 0.2rem;
+}
+.filter-menu button:hover{
+    transform: scale(1.1);
+}
+.filter-menu button:hover{
+    background-color: rgb(0,0,0,0.2);
 }
 .avatar-img-span{
     display: flex;
@@ -94,6 +133,9 @@
     color: var(--black-color);
     font-size: 1.2rem;
     font-weight: 600;
+}
+.create-post-btn:hover{
+    transform: scale(1.1);
 }
 
 .filter-btn-container{

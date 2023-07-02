@@ -1,0 +1,119 @@
+.addComment-container{
+    position:fixed;
+    height: 100vh;
+    background-color: rgb(73, 71, 71, 0.8);
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    
+}
+
+.addComment{
+    display:flex;
+    flex-direction: column;
+   
+    
+    height: fit-content;
+    width: 50%;
+    margin: 5% auto;
+    text-align: center;
+}
+.addComment h2{
+    color:var(--primary-color);;
+}
+.addComment form{
+    display: flex;
+    flex-direction: column;
+}
+/* .addComment form textarea{
+    margin:0.5rem auto;
+    padding:0.5rem;
+    height:5rem;
+    border-radius: 2rem;
+    border: none;
+    width: 60%;
+} */
+/* .addComment form input{
+    margin:0.5rem auto;
+    padding:0.5rem;
+   
+    border-radius: 2rem;
+    border: none;
+    width: 60%;
+} */
+
+.post-content{
+    background-color: var(--white-color);
+    outline:none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    width: 60%;
+    height: fit-content;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    grid-gap:1rem;
+    
+    cursor: pointer;
+}
+.post-content #post-img{
+    height: 300px;
+    width: 100%;
+    margin: auto;
+}
+.addComment form textarea{
+    margin:0.5rem auto;
+    padding:0.5rem;
+    height:2rem;
+    outline:none;
+    font-family:'Montserrat';
+    border-radius: 0.5rem;
+    border: none;
+    width:100%;
+}
+.addComment .post-content form input{
+    /* margin:0.5rem auto; */
+    padding:0.5rem;
+    
+    border-radius: 2rem;
+    border: none;
+    width: 60%;
+}
+.add-post-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.add-post-btns .add-post-btn{
+      
+    width: 30%;
+    background-color: var(--primary-color);
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    
+}
+.add-post-btns button:hover{
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+.add-post-btns button:first-of-type{
+    background-color: rgb(53, 161, 53);
+}
+.add-post-btns button:last-of-type{
+    background-color: rgb(211, 56, 56);
+}
+
+#file-upload-button{
+    background-color: var(--primary-color);
+}
+.addComment h3{
+    color: var(--primary-color);
+}

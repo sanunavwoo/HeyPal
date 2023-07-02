@@ -1,6 +1,8 @@
 import { useContext,useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import TuneIcon from '@mui/icons-material/Tune';
+
 import { AddPost } from "../../component/AddPostBox/AddPost";
 import { Footer } from "../../component/Footer/Footer";
 
@@ -29,15 +31,17 @@ export function Explore(){
                 <LeftSideDiv />
                 <div className="center-div">
                 
-                    <div className="filter-btn-container">
+                    {/* <div className="filter-btn-container">
                         <button onClick={()=>setSortBy("Trending")}>Trending</button>
                         <button onClick={()=>setSortBy("Latest")}>Latest</button>
-                    </div>
+                    </div> */}
+
+                   
 
                     <div>
                         {isCreatePostFlag && <AddPost setIsCreatePostFlag={setIsCreatePostFlag} /> }
                     </div>
-                    <h3>{sortBy} Posts</h3>
+                  
                     {postsLoading?
                         <img className="loading-img" src="https://assets.materialup.com/uploads/a7e6009b-6d69-4569-b1ee-0e01b234f2a1/preview.gif" />
                     :

@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { PostsContext } from "../../contexts/PostsContext";
-import "./AddCommentBox.css";
+import "./AddPostBox.css";
 
 
 export function AddPost({setIsCreatePostFlag}){
@@ -51,48 +51,52 @@ export function AddPost({setIsCreatePostFlag}){
                             
                          <form onSubmit={addPostFormHandler}>
                             
-                        
+                            
+                            <div className="post-content">
+                                <textarea
+                                    placeholder="Add Post.."
+                                    height="8rem"
+                                    width="100%"
+                                    outline="none"
+                                    border="none"
+                                    resize="none"
+                                    focusBorderColor="transparent"
+                                    name="content"
+                                    value= {postFormData.text}
+                                    required
+                                    onChange={(e)=>setPostFormData((postFormData)=>({
+                                        ...postFormData,
+                                        [e.target.name]: e.target.value,
+                                    }))}
+                                />
 
-                            <textarea
-                                placeholder="Add Post.."
-                                height="8rem"
-                                width="100%"
-                                outline="none"
-                                border="none"
-                                resize="none"
-                                focusBorderColor="transparent"
-                                name="content"
-                                value= {postFormData.text}
-                                required
-                                onChange={(e)=>setPostFormData((postFormData)=>({
-                                    ...postFormData,
-                                    [e.target.name]: e.target.value,
-                                }))}
-                            />
-
-                            {/* <input
-                                type="text"
-                                placeholder="Enter Media URL"
-                                name="mediaURL"
-                                value= {postFormData.mediaURL}
+                                {/* <input
+                                    type="text"
+                                    placeholder="Enter Media URL"
+                                    name="mediaURL"
+                                    value= {postFormData.mediaURL}
+                                    
+                                    onChange={(e)=>setPostFormData((postFormData)=>({
+                                        ...postFormData,
+                                        [e.target.name]: e.target.value,
+                                    }))}
+                                /> */}
+                                {postFormData.mediaURL.length>0 && <img id="post-img" src={postFormData.mediaURL} /> }
                                 
-                                onChange={(e)=>setPostFormData((postFormData)=>({
-                                    ...postFormData,
-                                    [e.target.name]: e.target.value,
-                                }))}
-                             /> */}
-                             
-                             <input 
-                                type="file"
-                                id="imageInput"
-                                name="mediaURL"
-                               
-                                onChange={handleImageChange}
-                             />
-
-                             <button type="submit">Submit</button>
-                             <button onClick={()=>setIsCreatePostFlag(false)}>Cancel</button>
-                        </form>
+                                <input 
+                                    type="file"
+                                    id="imageInput"
+                                    name="mediaURL"
+                                
+                                    onChange={handleImageChange}
+                                />
+                                       
+                            </div>
+                            <span className="add-post-btns">
+                                        <button className="add-post-btn" type="submit">Submit</button>
+                                        <button className="add-post-btn" onClick={()=>setIsCreatePostFlag(false)}>Cancel</button>
+                            </span> 
+                    </form>
                 </div>   
             </div>
         </>

@@ -3,6 +3,7 @@ import { NavLink,useNavigate } from "react-router-dom";
 import { Fab } from '@mui/material';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import TuneIcon from '@mui/icons-material/Tune';
 
 import { AddPost } from "../../component/AddPostBox/AddPost";
 import { LeftSideDiv } from "../../component/LeftSideDiv/LeftSideDiv";
@@ -36,6 +37,9 @@ export function Home(){
     // const [isCreatePostFlag,setIsCreatePostFlag]= useState(false);
 
     const [searchedTerm,setSearchedTerm]= useState("");
+
+    const [showFilterMenu,setShowFilterMenu]= useState(false);
+
 
     
     function handleSearch(e){
@@ -90,9 +94,24 @@ export function Home(){
                 </div>
                 }
 
-                <div className="filter-btn-container">
+                {/* <div className="filter-btn-container">
                     <button onClick={()=>setSortBy("Trending")}>Trending</button>
                     <button onClick={()=>setSortBy("Latest")}>Latest</button>
+                </div> */}
+                <div className="filter-header">
+                    <h3>{sortBy} Posts</h3>
+                    <div className="filter-header-right">
+                    <button onClick={()=>setShowFilterMenu(!showFilterMenu)}><TuneIcon /></button>
+                    {showFilterMenu && 
+                            <span className="filter-menu">
+                                <span>
+                                    <button onClick={()=>setSortBy("Trending")}>Trending</button>
+                                    <button onClick={()=>setSortBy("Latest")}>Latest</button>
+                                    <button onClick={()=>setSortBy("Oldest")}>Oldest</button>
+                                </span>
+                            </span>
+                        }
+                    </div>
                 </div>
 
                 <div>

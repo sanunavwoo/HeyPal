@@ -17,11 +17,13 @@
 .user-card-details{
     width: 100%;
     text-align: left;
+    cursor:pointer;
 }
 .user-card-details p{
     margin: 0;
     padding: 0.1rem 0.5rem;
 }
+
 .user-card-followBtn-div{
     display: flex;
     align-items: center;

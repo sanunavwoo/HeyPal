@@ -81,6 +81,9 @@ export function PostContextProvider({children}){
             case "LATEST":
                 return [...allPosts].sort((a,b)=>new Date(b.createdAt)- new Date(a.createdAt));
             
+            case "OLDEST":
+                return [...allPosts].sort((a,b)=>new Date(a.createdAt)- new Date(b.createdAt));
+              
             case "TRENDING":
                 return [...allPosts].sort((a,b)=>b.likes.likeCount - a.likes.likeCount);
 
