@@ -48,3 +48,6 @@
   --grey-color: #9ca3af;
   --red-color: red;
 }
+html{
+  background-color: rgb(250, 250, 250);;
+}

@@ -29,6 +29,7 @@
 .searchbar-div{
     padding:0.5rem;
     margin: 0.5rem auto;
+    width: 50%;
 }
 @media (max-width: 768px){
 
@@ -37,7 +38,7 @@
         width: 100%;
     }
     .searchbar-div input{
-        width:100%;
+        width: 100%;
     }
     .filter-btn-container button{
         width:100%;
@@ -49,7 +50,7 @@
     border-radius: 1rem;
     color:var(--black-color);
     border: double 0.5px var(--primary-color);
-    width: 26rem;
+    width: 100%;
     height: 1.5rem;
     font-weight: 500;
     font-size: 0.8rem;

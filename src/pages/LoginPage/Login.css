@@ -60,6 +60,7 @@
     .login-div-left{
         display: none;
     }
+   
 }
 .login-div-left div{
     margin-top: 8rem;
@@ -95,6 +96,9 @@
     color:rgb(32, 32, 31);
     font-size: 1rem;
     cursor: pointer;
+}
+.login-div button:hover{
+    transform: scale(1.1);
 }
 
 .password-wrapper{
