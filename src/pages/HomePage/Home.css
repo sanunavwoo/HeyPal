@@ -43,6 +43,12 @@
     .filter-btn-container button{
         width:100%;
     }
+    .search-results-container{
+        width: 100%;
+    }
+    .filter-menu button{
+        width: 5rem;
+    }
 }
 .searchbar-div input{
     padding: 0.4rem;
