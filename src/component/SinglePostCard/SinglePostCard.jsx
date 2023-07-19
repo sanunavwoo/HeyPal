@@ -39,7 +39,7 @@ export function SinglePostCard({eachPost,showComments}){
     const [postToBeUpdated, setPostToBeUpdated]= useState(0);
 
     const navigate= useNavigate();
-
+    
     console.log("createdAt::",eachPost.createdAt);
     useEffect(()=>{
         setUserData(allUsers?.find(({username})=>username===eachPost.username));
@@ -116,9 +116,9 @@ export function SinglePostCard({eachPost,showComments}){
                 </div>
            
                 <div className="action-btns">
-                    <span><button onClick={()=>isLikedByFlag===-1? likeHandler(eachPost._id) : dislikeHandler(eachPost._id) }>{isLikedByFlag===-1? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon /> }</button><span className="qty">{eachPost.likes.likeCount}</span></span>
+                    <span><button onClick={()=>isLikedByFlag===-1? likeHandler(eachPost._id) : dislikeHandler(eachPost._id) }>{isLikedByFlag===-1? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon style={{color:"red"}} /> }</button><span className="qty">{eachPost.likes.likeCount}</span></span>
                     <span><button onClick={()=>setIsCommentForm(true)}><CommentIcon /></button><span className="qty">{commentsForThisPost?.length}</span></span>
-                    <span><button onClick={()=>isPostBookmarkedFlag===-1?addBookmarkHandler(eachPost._id) : removeBookmarkHandler(eachPost._id) }>{isPostBookmarkedFlag===-1 ? <BookmarkBorderOutlinedIcon /> : <BookmarkIcon />}</button></span>
+                    <span><button onClick={()=>isPostBookmarkedFlag===-1?addBookmarkHandler(eachPost._id) : removeBookmarkHandler(eachPost._id) }>{isPostBookmarkedFlag===-1 ? <BookmarkBorderOutlinedIcon /> : <BookmarkIcon style={{color:"green"}} />}</button></span>
 
                     {/* <span><button onClick={()=>{
                         if(isPostBookmarkedFlag===-1){

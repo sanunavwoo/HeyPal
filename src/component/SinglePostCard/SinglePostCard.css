@@ -83,6 +83,9 @@
    transform: scale(1.2);
     /* box-shadow: 0 3px 8px rgb(107, 96, 96); */
 }
+FavouriteIcon{
+    color:"red";
+}
 .action-btns .qty{
     position:absolute;
 }
