@@ -41,7 +41,9 @@ export function Explore(){
                     <div>
                         {isCreatePostFlag && <AddPost setIsCreatePostFlag={setIsCreatePostFlag} /> }
                     </div>
-                  
+                    <div>
+                        <h1>Explore</h1>
+                    </div>
                     {postsLoading?
                         <img className="loading-img" src="https://assets.materialup.com/uploads/a7e6009b-6d69-4569-b1ee-0e01b234f2a1/preview.gif" />
                     :
