@@ -64,7 +64,7 @@ export function Login(){
                             
                             </div>
                             <div className="password-wrapper">
-                                <input type="text" onChange={(e)=>setLoginPassword(e.target.value)} value={loginPassword} placeholder="Enter Password" required />
+                                <input type="password" onChange={(e)=>setLoginPassword(e.target.value)} value={loginPassword} placeholder="Enter Password" required />
                                 {/* <span onClick={()=>setIsVisible(!isVisible)}>
                                     {isVisible? <VisibilityIcon /> : <VisibilityOffIcon /> }
                                 </span> */}
