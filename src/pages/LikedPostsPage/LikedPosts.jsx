@@ -39,7 +39,7 @@ export function LikedPosts(){
                     <>
                         
                         {likedPostsArr.map((eachPost)=>(
-                        <div key={eachPost._id}>
+                        <div key={eachPost._id} className="post-card-container-div">
                            
                             <SinglePostCard eachPost={eachPost} />
                         </div>

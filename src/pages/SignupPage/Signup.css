@@ -42,7 +42,7 @@
     grid-gap: 5rem;
     align-items: center;
     width: 60%;
-    height: 32rem;
+    height: fit-content;/* 1907 32rem */
     box-shadow: 2px 2px 2px #777373;
     background-color: rgb(250, 250, 250);
 }
@@ -58,6 +58,11 @@
 @media (max-width: 768px){
     .login-div-left{
         display: none;
+    }
+    .login-div{
+        width:80%;
+        /* 1907 */
+        
     }
 }
 .login-div-left div{

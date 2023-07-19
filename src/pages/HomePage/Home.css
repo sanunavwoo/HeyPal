@@ -33,9 +33,21 @@
 }
 @media (max-width: 768px){
 
-    .searchbar-div{
+    /* .searchbar-div{
         margin: 3.5rem auto 1rem;
         width: 100%;
+    } */
+    .center-div{ /*1907*/
+        width: 100%;
+        left:0;
+    }
+    .searchbar-div { /*1907*/
+        margin: 3.5rem auto 1rem;
+        width: 80%;
+    }
+    .post-card-container-div{ /*1907*/
+        margin: auto;
+        width: 90%;
     }
     .searchbar-div input{
         width: 100%;

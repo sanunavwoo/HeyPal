@@ -47,7 +47,7 @@ export function Signup(){
         <Navigation />
             <div className="login-container">
         
-                <div className="login-div">
+                <div className="login-div signup">
 
                     <div className="login-div-left">
                         <div>

@@ -43,7 +43,7 @@ export function Bookmarks(){
                             <>
                        
                                 {bookmarkedPostsID.map((eachPost)=>(
-                                <div key={eachPost._id}>
+                                <div key={eachPost._id} className="post-card-container-div">
                                     
                                     <SinglePostCard eachPost={getBookmarkedPosts(eachPost)} />
                                 </div>

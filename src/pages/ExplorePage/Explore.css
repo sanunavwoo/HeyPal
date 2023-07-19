@@ -16,6 +16,21 @@
     flex-direction: column;
     
 }
+/* 1907 */
+@media (max-width: 768px){
+    .center-div{
+        width: 100%;
+        left:0;
+    }
+    .searchbar-div {
+        margin: 3.5rem auto 1rem;
+        width: 80%;
+    }
+    .post-card-container-div{
+        margin: auto;
+        width: 90%;
+    }
+}
 .loading-img{
     height:100px;
     width:100px;

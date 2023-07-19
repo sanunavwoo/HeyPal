@@ -12,7 +12,8 @@
 }
 @media (max-width: 768px){
     .singlePostCard-container{
-        width: 100%;
+        /* width: 100%; 1907 */
+        width: 90%;
     }
 }
 

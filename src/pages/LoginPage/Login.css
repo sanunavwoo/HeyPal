@@ -42,7 +42,8 @@
     grid-gap: 5rem;
     align-items: center;
     width: 60%;
-    height: 25rem;
+    /* height: 25rem; */
+    height: fit-content;/* 1907 25rem */
     box-shadow: 2px 2px 2px #777373;
     background-color: rgb(250, 250, 250);
 }
@@ -59,6 +60,11 @@
 @media (max-width: 768px){
     .login-div-left{
         display: none;
+    }
+    /* 1907 */
+    .login-div{
+        width:80%;
+        
     }
    
 }
